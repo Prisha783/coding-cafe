@@ -1,0 +1,349 @@
+prishak@DESKTOP-GIQ96MC:~$ pwd
+/home/prishak
+prishak@DESKTOP-GIQ96MC:~$ ls
+prishak@DESKTOP-GIQ96MC:~$ ls -a
+.  ..  .bash_history  .bash_logout  .bashrc  .cache  .config  .motd_shown  .profile
+prishak@DESKTOP-GIQ96MC:~$ ls -1
+prishak@DESKTOP-GIQ96MC:~$ mkdir coding-cafe
+prishak@DESKTOP-GIQ96MC:~$ ls
+coding-cafe
+prishak@DESKTOP-GIQ96MC:~$ cd~
+Command 'cd~' not found, did you mean:
+  command 'cdb' from deb tinycdb (0.81-2build1)
+Try: sudo apt install <deb name>
+prishak@DESKTOP-GIQ96MC:~$ cd ~
+prishak@DESKTOP-GIQ96MC:~$ mkdir coding-cafe
+mkdir: coding-cafe: File exists
+prishak@DESKTOP-GIQ96MC:~$ mkdir coding-cafe/week01
+prishak@DESKTOP-GIQ96MC:~$ mkdir coding-cafe/week02
+prishak@DESKTOP-GIQ96MC:~$ touch coding-cafe/README.md
+prishak@DESKTOP-GIQ96MC:~$ touch coding-cafe/week02/notes.md
+prishak@DESKTOP-GIQ96MC:~$ ls coding- cafe/week02
+ls: cannot access 'coding-': No such file or directory
+ls: cannot access 'cafe/week02': No such file or directory
+prishak@DESKTOP-GIQ96MC:~$ ls coding-cafe/week02
+notes.md
+prishak@DESKTOP-GIQ96MC:~$ bash explorer.exe
+/mnt/c/windows/explorer.exe: /mnt/c/windows/explorer.exe: cannot execute binary file
+prishak@DESKTOP-GIQ96MC:~$ bash
+prishak@DESKTOP-GIQ96MC:~$ ls
+coding-cafe
+prishak@DESKTOP-GIQ96MC:~$ code .
+prishak@DESKTOP-GIQ96MC:~$ ls -R coding-cafe
+coding-cafe:
+README.md  week01  week02
+
+coding-cafe/week01:
+
+coding-cafe/week02:
+notes.md
+prishak@DESKTOP-GIQ96MC:~$ cp README.md README-backup.md
+'cp: cannot stat 'README.md': No such file or directory
+prishak@DESKTOP-GIQ96MC:~$ pwd
+/home/prishak
+prishak@DESKTOP-GIQ96MC:~$ ls
+coding-cafe
+prishak@DESKTOP-GIQ96MC:~$ cd coding cafe
+bash: cd: too many arguments
+prishak@DESKTOP-GIQ96MC:~$ cd coding-cafe
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ ls
+README.md  week01  week02
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ cp README.md README-backup.md
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ mv README-backup.md week01/
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ cd week01
+prishak@DESKTOP-GIQ96MC:~/coding-cafe/week01$ mv README-backup.md old readme.md
+mv: target 'readme.md': No such file or directory
+prishak@DESKTOP-GIQ96MC:~/coding-cafe/week01$ mv README-backup.md old-readme.md
+prishak@DESKTOP-GIQ96MC:~/coding-cafe/week01$ ls
+old-readme.md
+prishak@DESKTOP-GIQ96MC:~/coding-cafe/week01$ rm old-readme.md
+'prishak@DESKTOP-GIQ96MC:~/coding-cafe/week01$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/WindowsApps/MicrosoftCorporationII.WindowsSubsystemForLinux_2.7.12.0_x64__8wekyb3d8bbwe:/mnt/c/windows/system32:/mnt/c/windows:/mnt/c/windows/System32/Wbem:/mnt/c/windows/System32/WindowsPowerShell/v1.0/:/mnt/c/windows/System32/OpenSSH/:/mnt/c/Users/PrishaK/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/PrishaK/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/PrishaK/Downloads/gcc-16.1.0-gdb-17.2.90.20260510-binutils-2.46.0-mingw-w64-v14.0.0-ucrt/bin:/mnt/c/Users/PrishaK/AppData/Local/Python/bin:/snap/bin
+prishak@DESKTOP-GIQ96MC:~/coding-cafe/week01$ which python3
+/usr/bin/python3
+prishak@DESKTOP-GIQ96MC:~/coding-cafe/week01$ which pip
+prishak@DESKTOP-GIQ96MC:~/coding-cafe/week01$ which ls
+/usr/bin/ls
+prishak@DESKTOP-GIQ96MC:~/coding-cafe/week01$ pyton3
+Command 'pyton3' not found, did you mean:
+  command 'python3' from deb python3 (3.14.3-0ubuntu2)
+Try: sudo apt install <deb name>
+prishak@DESKTOP-GIQ96MC:~/coding-cafe/week01$ cd ~/coding-cafe
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ -m venv .venv
+-m: command not found
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ python3 -m venv .venv
+The virtual environment was not created successfully because ensurepip is not
+available.  On Debian/Ubuntu systems, you need to install the python3-venv
+package using the following command.
+
+    apt install python3.14-venv
+
+You may need to use sudo with that command.  After installing the python3-venv
+package, recreate your virtual environment.
+
+Failing command: /home/prishak/coding-cafe/.venv/bin/python3
+
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ sudo apt install python3.14-venv
+[sudo: authenticate] Password:
+Package python3.14-venv is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+Error: Package 'python3.14-venv' has no installation candidate
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ sudo apt install python3-venv
+Package python3-venv is not available, but is referred to by another package.
+This may mean that the package is missing, has been obsoleted, or
+is only available from another source
+
+Error: Package 'python3-venv' has no installation candidate
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ cd..
+cd..: command not found
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ sudo apt update
+Get:1 http://archive.ubuntu.com/ubuntu resolute InRelease [136 kB]
+Get:2 http://security.ubuntu.com/ubuntu resolute-security InRelease [137 kB]
+Get:3 http://archive.ubuntu.com/ubuntu resolute-updates InRelease [137 kB]
+Get:4 http://archive.ubuntu.com/ubuntu resolute-backports InRelease [137 kB]
+Get:5 http://archive.ubuntu.com/ubuntu resolute/main amd64 Packages [1480 kB]
+Get:6 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Packages [424 kB]
+Get:7 http://archive.ubuntu.com/ubuntu resolute/main Translation-en [524 kB]
+Get:8 http://archive.ubuntu.com/ubuntu resolute/main amd64 Components [395 kB]
+Get:9 http://archive.ubuntu.com/ubuntu resolute/main amd64 c-n-f Metadata [32.4 kB]
+Get:10 http://archive.ubuntu.com/ubuntu resolute/universe amd64 Packages [16.0 MB]
+Get:11 http://security.ubuntu.com/ubuntu resolute-security/main Translation-en [97.9 kB]
+Get:12 http://archive.ubuntu.com/ubuntu resolute/universe Translation-en [6329 kB]
+Get:13 http://security.ubuntu.com/ubuntu resolute-security/main amd64 Components [46.6 kB]
+Get:14 http://security.ubuntu.com/ubuntu resolute-security/main amd64 c-n-f Metadata [4616 B]
+Get:15 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Packages [159 kB]
+Get:16 http://archive.ubuntu.com/ubuntu resolute/universe amd64 Components [4556 kB]
+Get:17 http://security.ubuntu.com/ubuntu resolute-security/universe Translation-en [51.2 kB]
+Get:18 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 Components [43.2 kB]
+Get:19 http://security.ubuntu.com/ubuntu resolute-security/universe amd64 c-n-f Metadata [3552 B]
+Get:20 http://security.ubuntu.com/ubuntu resolute-security/restricted amd64 Packages [361 kB]
+Get:21 http://archive.ubuntu.com/ubuntu resolute/universe amd64 c-n-f Metadata [313 kB]
+Get:22 http://archive.ubuntu.com/ubuntu resolute/restricted amd64 Packages [152 kB]
+Get:23 http://archive.ubuntu.com/ubuntu resolute/restricted Translation-en [25.8 kB]
+Get:24 http://archive.ubuntu.com/ubuntu resolute/restricted amd64 Components [556 B]
+Get:25 http://archive.ubuntu.com/ubuntu resolute/multiverse amd64 Packages [290 kB]
+Get:26 http://archive.ubuntu.com/ubuntu resolute/multiverse Translation-en [127 kB]
+Get:27 http://archive.ubuntu.com/ubuntu resolute/multiverse amd64 Components [50.0 kB]
+Get:28 http://archive.ubuntu.com/ubuntu resolute/multiverse amd64 c-n-f Metadata [8276 B]
+Get:29 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Packages [549 kB]
+Get:30 http://archive.ubuntu.com/ubuntu resolute-updates/main Translation-en [128 kB]
+Get:31 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 Components [97.8 kB]
+Get:32 http://security.ubuntu.com/ubuntu resolute-security/restricted Translation-en [70.0 kB]
+Get:33 http://security.ubuntu.com/ubuntu resolute-security/restricted amd64 c-n-f Metadata [396 B]
+Get:34 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 Packages [9020 B]
+Get:35 http://security.ubuntu.com/ubuntu resolute-security/multiverse Translation-en [2660 B]
+Get:36 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 Components [212 B]
+Get:37 http://security.ubuntu.com/ubuntu resolute-security/multiverse amd64 c-n-f Metadata [120 B]
+Get:38 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 c-n-f Metadata [5756 B]
+Get:39 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Packages [252 kB]
+Get:40 http://archive.ubuntu.com/ubuntu resolute-updates/universe Translation-en [84.4 kB]
+Get:41 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 Components [188 kB]
+Get:42 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 c-n-f Metadata [4704 B]
+Get:43 http://archive.ubuntu.com/ubuntu resolute-updates/restricted amd64 Packages [371 kB]
+Get:44 http://archive.ubuntu.com/ubuntu resolute-updates/restricted Translation-en [71.7 kB]
+Get:45 http://archive.ubuntu.com/ubuntu resolute-updates/restricted amd64 c-n-f Metadata [392 B]
+Get:46 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse amd64 Packages [11.3 kB]
+Get:47 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse Translation-en [3032 B]
+Get:48 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse amd64 Components [216 B]
+Get:49 http://archive.ubuntu.com/ubuntu resolute-updates/multiverse amd64 c-n-f Metadata [256 B]
+Get:50 http://archive.ubuntu.com/ubuntu resolute-backports/main amd64 Components [212 B]
+Get:51 http://archive.ubuntu.com/ubuntu resolute-backports/main amd64 c-n-f Metadata [112 B]
+Get:52 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 Packages [3132 B]
+Get:53 http://archive.ubuntu.com/ubuntu resolute-backports/universe Translation-en [7988 B]
+Get:54 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 Components [1056 B]
+Get:55 http://archive.ubuntu.com/ubuntu resolute-backports/universe amd64 c-n-f Metadata [116 B]
+Get:56 http://archive.ubuntu.com/ubuntu resolute-backports/restricted amd64 Components [216 B]
+Get:57 http://archive.ubuntu.com/ubuntu resolute-backports/restricted amd64 c-n-f Metadata [120 B]
+Get:58 http://archive.ubuntu.com/ubuntu resolute-backports/multiverse amd64 Components [216 B]
+Get:59 http://archive.ubuntu.com/ubuntu resolute-backports/multiverse amd64 c-n-f Metadata [120 B]
+Fetched 33.8 MB in 9s (3947 kB/s)
+122 packages can be upgraded. Run 'apt list --upgradable' to see them.
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ python3 --version
+Python 3.14.4
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ sudo apt install python3.14.4-venv
+Error: Unable to locate package python3.14.4-venv
+Error: Couldn't find any package by glob 'python3.14.4-venv'
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ sudo apt install python3-venv
+Upgrading:
+  libpython3.14  libpython3.14-minimal  libpython3.14-stdlib  python3.14  python3.14-gdbm  python3.14-minimal
+
+Installing:
+  python3-venv
+
+Installing dependencies:
+  python3-pip-whl  python3-setuptools-whl  python3.14-venv
+
+Summary:
+  Upgrading: 6, Installing: 4, Removing: 0, Not Upgrading: 116
+  Download size: 12.0 MB
+  Space needed: 2993 kB / 1024 GB available
+
+Continue? [Y/n] Y
+Get:1 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 python3.14 amd64 3.14.4-1ubuntu0.1 [830 kB]
+Get:2 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 libpython3.14 amd64 3.14.4-1ubuntu0.1 [2579 kB]
+Get:3 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 libpython3.14-stdlib amd64 3.14.4-1ubuntu0.1 [2414 kB]
+Get:4 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 python3.14-minimal amd64 3.14.4-1ubuntu0.1 [2580 kB]
+Get:5 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 libpython3.14-minimal amd64 3.14.4-1ubuntu0.1 [916 kB]
+Get:6 http://archive.ubuntu.com/ubuntu resolute-updates/main amd64 python3.14-gdbm amd64 3.14.4-1ubuntu0.1 [29.3 kB]
+Get:7 http://archive.ubuntu.com/ubuntu resolute/universe amd64 python3-pip-whl all 25.1.1+dfsg-1ubuntu2 [1430 kB]
+Get:8 http://archive.ubuntu.com/ubuntu resolute/universe amd64 python3-setuptools-whl all 78.1.1-0.1build1 [1174 kB]
+Get:9 http://archive.ubuntu.com/ubuntu resolute-updates/universe amd64 python3.14-venv amd64 3.14.4-1ubuntu0.1 [5354 B]
+Get:10 http://archive.ubuntu.com/ubuntu resolute/universe amd64 python3-venv amd64 3.14.3-0ubuntu2 [1032 B]
+Fetched 12.0 MB in 10s (1193 kB/s)
+(Reading database ... 35923 files and directories currently installed.)
+Preparing to unpack .../0-python3.14_3.14.4-1ubuntu0.1_amd64.deb ...
+Unpacking python3.14 (3.14.4-1ubuntu0.1) over (3.14.4-1) ...
+Preparing to unpack .../1-libpython3.14_3.14.4-1ubuntu0.1_amd64.deb ...
+Unpacking libpython3.14:amd64 (3.14.4-1ubuntu0.1) over (3.14.4-1) ...
+Preparing to unpack .../2-libpython3.14-stdlib_3.14.4-1ubuntu0.1_amd64.deb ...
+Unpacking libpython3.14-stdlib:amd64 (3.14.4-1ubuntu0.1) over (3.14.4-1) ...
+Preparing to unpack .../3-python3.14-minimal_3.14.4-1ubuntu0.1_amd64.deb ...
+Unpacking python3.14-minimal (3.14.4-1ubuntu0.1) over (3.14.4-1) ...
+Preparing to unpack .../4-libpython3.14-minimal_3.14.4-1ubuntu0.1_amd64.deb ...
+Unpacking libpython3.14-minimal:amd64 (3.14.4-1ubuntu0.1) over (3.14.4-1) ...
+Preparing to unpack .../5-python3.14-gdbm_3.14.4-1ubuntu0.1_amd64.deb ...
+Unpacking python3.14-gdbm (3.14.4-1ubuntu0.1) over (3.14.4-1) ...
+Selecting previously unselected package python3-pip-whl.
+Preparing to unpack .../6-python3-pip-whl_25.1.1+dfsg-1ubuntu2_all.deb ...
+Unpacking python3-pip-whl (25.1.1+dfsg-1ubuntu2) ...
+Selecting previously unselected package python3-setuptools-whl.
+Preparing to unpack .../7-python3-setuptools-whl_78.1.1-0.1build1_all.deb ...
+Unpacking python3-setuptools-whl (78.1.1-0.1build1) ...
+Selecting previously unselected package python3.14-venv.
+Preparing to unpack .../8-python3.14-venv_3.14.4-1ubuntu0.1_amd64.deb ...
+Unpacking python3.14-venv (3.14.4-1ubuntu0.1) ...
+Selecting previously unselected package python3-venv.
+Preparing to unpack .../9-python3-venv_3.14.3-0ubuntu2_amd64.deb ...
+Unpacking python3-venv (3.14.3-0ubuntu2) ...
+Setting up python3-setuptools-whl (78.1.1-0.1build1) ...
+Setting up python3-pip-whl (25.1.1+dfsg-1ubuntu2) ...
+Setting up libpython3.14-minimal:amd64 (3.14.4-1ubuntu0.1) ...
+Setting up python3.14-gdbm (3.14.4-1ubuntu0.1) ...
+Setting up python3.14-minimal (3.14.4-1ubuntu0.1) ...
+Setting up libpython3.14-stdlib:amd64 (3.14.4-1ubuntu0.1) ...
+Setting up libpython3.14:amd64 (3.14.4-1ubuntu0.1) ...
+Setting up python3.14 (3.14.4-1ubuntu0.1) ...
+Setting up python3.14-venv (3.14.4-1ubuntu0.1) ...
+Setting up python3-venv (3.14.3-0ubuntu2) ...
+Processing triggers for systemd (259.5-0ubuntu3) ...
+Processing triggers for man-db (2.13.1-1build1) ...
+Processing triggers for libc-bin (2.43-2ubuntu2) ...
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ python3 -m venv .venv
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ ls -a
+.  ..  .venv  README.md  week01  week02
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ ls
+README.md  week01  week02
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ source .venv/bin/activate
+(.venv) prishak@DESKTOP-GIQ96MC:~/coding-cafe$ which python3
+/home/prishak/coding-cafe/.venv/bin/python3
+(.venv) prishak@DESKTOP-GIQ96MC:~/coding-cafe$ pip lists
+ERROR: unknown command "lists" - maybe you meant "list"
+(.venv) prishak@DESKTOP-GIQ96MC:~/coding-cafe$ pip list
+Package Version
+------- -------
+pip     25.1.1
+(.venv) prishak@DESKTOP-GIQ96MC:~/coding-cafe$ pip install requests
+Collecting requests
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting charset_normalizer<4,>=2 (from requests)
+  Downloading charset_normalizer-3.5.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (45 kB)
+Collecting idna<4,>=2.5 (from requests)
+  Downloading idna-3.19-py3-none-any.whl.metadata (9.2 kB)
+Collecting urllib3<3,>=1.26 (from requests)
+  Downloading urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting certifi>=2023.5.7 (from requests)
+  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading charset_normalizer-3.5.1-cp314-cp314-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (251 kB)
+Downloading idna-3.19-py3-none-any.whl (68 kB)
+Downloading urllib3-2.7.0-py3-none-any.whl (131 kB)
+Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+Installing collected packages: urllib3, idna, charset_normalizer, certifi, requests
+Successfully installed certifi-2026.7.22 charset_normalizer-3.5.1 idna-3.19 requests-2.34.2 urllib3-2.7.0
+(.venv) prishak@DESKTOP-GIQ96MC:~/coding-cafe$ pip list
+Package            Version
+------------------ ---------
+certifi            2026.7.22
+charset-normalizer 3.5.1
+idna               3.19
+pip                25.1.1
+requests           2.34.2
+urllib3            2.7.0
+(.venv) prishak@DESKTOP-GIQ96MC:~/coding-cafe$ deactivate
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ which python3
+/usr/bin/python3
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ man ls
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ ls -h
+README.md  week01  week02
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ man man
+man: can't resolve man7/groff_man.7
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ history
+    1  python3 --version
+    2  ``` bash
+    3  pwd
+    4  pwd
+    5  1s -a
+    6  pwd
+    7  1s
+    8  1s -a
+    9  ls -a
+   10  ls
+   11  code .
+   12  ls -R coding-cafe
+   13  cp README.md README-backup.md
+   14  pwd
+   15  ls
+   16  cd coding cafe
+   17  cd coding-cafe
+   18  ls
+   19  cp README.md README-backup.md
+   20  mv README-backup.md week01/
+   21  cd week01
+   22  mv README-backup.md old readme.md
+   23  mv README-backup.md old-readme.md
+   24  ls
+   25  rm old-readme.md
+   26  echo $PATH
+   27  which python3
+   28  which pip
+   29  which ls
+   30  pyton3
+   31  cd ~/coding-cafe
+   32  -m venv .venv
+   33  python3 -m venv .venv
+   34  sudo apt install python3.14-venv
+   35  sudo apt install python3-venv
+   36  cd..
+   37  sudo apt update
+   38  python3 --version
+   39  sudo apt install python3.14.4-venv
+   40  sudo apt install python3-venv
+   41  python3 -m venv .venv
+   42  ls -a
+   43  ls
+   44  source .venv/bin/activate
+   45  which python3
+   46  pip lists
+   47  pip list
+   48  pip install requests
+   49  pip list
+   50  deactivate
+   51  which python3
+   52  man ls
+   53  ls -h
+   54  man man
+   55  history
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ python3
+Python 3.14.4 (main, Jun 18 2026, 14:25:02) [GCC 15.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+KeyboardInterrupt
+>>>
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ ls Week02
+ls: cannot access 'Week02': No such file or directory
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ ls week02
+notes.md
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$ nano week02/lab01-log.txt
+prishak@DESKTOP-GIQ96MC:~/coding-cafe$
