@@ -30,3 +30,9 @@ Git printed a summary of the commit including the number of files changed and th
 #question 8:
 The first seven characters of the commit ID are the short commit hash. They identify that particular commit and can be used to 
 refer to in Git commands.
+#question 9:
+first we checked the git status then we staged the changes and then saved them in gut history. Finally we viewed the commit 
+history.
+#question10:
+README.md gives readers an introduction to the project and explains its contents. It is usually placed in the main folder so 
+that people can find it easily unlike notes.md which contains specific notes. 
