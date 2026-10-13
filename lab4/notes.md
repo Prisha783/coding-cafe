@@ -36,3 +36,17 @@ history.
 #question10:
 README.md gives readers an introduction to the project and explains its contents. It is usually placed in the main folder so 
 that people can find it easily unlike notes.md which contains specific notes. 
+#question 11:
+gh auth login authenticated my Github account with the Github CLI. It allowed me to perform Github operations without repeatedly 
+entering my password,as long as my authentication remains valid. 
+#question12:
+The front page shows the files and folders in my repository along with the README.md content. README.md is displayed because it
+provides an introduction to the project and helps readers understand its purpose.
+#question13:
+No,pushing did not change my local history. It uploaded my existing commits to GitHub without creating new commits or changing 
+their contents.
+#question 14:
+A private repository exists on GitHub,but only its owner and people who have been given permission can access it.My TA's cannot 
+view it unless I grant them the access. For a repository to not exist on GitHub, nobody has access to it because it is not 
+created or uploaded. 
+
